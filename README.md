@@ -5,8 +5,8 @@ This project is a simple chat implementation with websockets. You can use Jboss 
 
 English Details
 ------------
-Tomcat: just enable javax.websocket-api lib in pom.xml
-Jboss: enable jboss-websocket-api_1.0_spec lib in pom.xml and need to use files into configurations-jboss folder
+Tomcat: just enable javax.websocket-api lib in pom.xml.
+Jboss: enable jboss-websocket-api_1.0_spec lib in pom.xml and need to use files into configurations-jboss folder.
 
 * Copy files into configurations-jboss folder to "bin" folder into JBoss
 * Access the folder 'bin' by console with JBoss running and execute the commands below:
@@ -17,8 +17,8 @@ To use HTTPS, change files above to use 'connector=https'
 
 Detalhes em português
 ------------
-Tomcat: habilita javax.websocket-api lib no pom.xml
-Jboss: habilita jboss-websocket-api_1.0_spec lib no pom.xml e use os arquivos do diretório configurations-jboss
+Tomcat: habilita javax.websocket-api lib no pom.xml.
+Jboss: habilita jboss-websocket-api_1.0_spec lib no pom.xml e use os arquivos do diretório configurations-jboss.
 
 * Copiar os arquivos em anexo na pasta “bin” do JBOSS.
 * Acessar a pasta “bin” pelo console e com o JBOSS rodando executar os seguintes comandos:
