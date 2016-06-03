@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<f:facet name="first">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</f:facet>
+
+	<title><ui:insert name="titulo">Websockets example</ui:insert></title>
+
+	<h:outputStylesheet library="styles" name="custom.css" />
+	<h:outputStylesheet library="styles" name="layout.css" />
+	<h:outputStylesheet library="styles" name="components.css" />
+
+	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js" />
+	<h:outputScript target="body" library="javascripts" name="app2.js" />
+</h:head>
+
+<h:body>
+	<form id="do-chat">
+			<label for="nickname">Nome:</label>
+			<input type="text" class="input-block-level" placeholder="Nickname" id="nickname" />
+			<label for="nickname">Processo:</label>
+			<input type="text" class="input-block-level" placeholder="processo" id="processo" />
+			<input type="button" class="btn btn-large btn-block btn-primary" value="Abrir conexão" onclick="connectToChatserver()" />
+			<input type="button" class="btn btn-large btn-block btn-primary" value="Fechar conexão" onclick="fecharConexao()" />
+			<div id="status"></div>
+			<br /><br />
+			<table style="width:100%">
+				<tr>
+					<td id="processos" style="width:20%">
+						<b>Processos:</b><br/>
+					</td>
+					<td style="width:80%">
+						<div id="respostas" valign="top">
+						</div>
+						<br /><br />
+						<div class="controls">
+							<input type="text" class="input-block-level" placeholder="Your message..." id="message" style="height:60px" autocomplete="off"/>
+							<input type="submit" class="btn btn-large btn-block btn-primary" value="Send message" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+</h:body>
+</html>
